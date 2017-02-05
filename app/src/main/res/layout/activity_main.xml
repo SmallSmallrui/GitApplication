@@ -5,14 +5,24 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.hurui.gitapplication.MainActivity">
-
+    <com.hurui.gitapplication.MyTouchView
+        android:id="@+id/myView"
+        android:clickable="true"
+        android:background="#f00"
+        android:layout_width="250dp"
+        android:layout_height="250dp"/>
     <TextView
+        android:text="haha"
+        android:id="@+id/yTv"
+        android:layout_alignParentBottom="true"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="haha"
+        android:id="@+id/xTv"
+        android:layout_above="@id/yTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 </RelativeLayout>
