@@ -90,6 +90,7 @@ public class MyTouchView extends View {
         if(scroller.computeScrollOffset()){
             scrollTo(scroller.getCurrX() , scroller.getCurrY() );
             postInvalidate();
+
         }
     }
 }
